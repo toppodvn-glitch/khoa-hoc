@@ -1004,6 +1004,60 @@ export default function App() {
           </div>
         </section>
 
+        {/* Training Gallery */}
+        <section className="py-24 bg-slate-950/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl md:text-4xl font-black text-white mb-4 uppercase tracking-tight">
+                HÌNH ẢNH <span className="text-yellow-500">CÁC LỚP ĐÀO TẠO</span>
+              </h2>
+              <div className="w-24 h-1 bg-yellow-500 mx-auto rounded-full"></div>
+              <p className="text-slate-400 mt-6 max-w-2xl mx-auto text-lg">
+                Những khoảnh khắc thực chiến cùng hàng ngàn học viên trên khắp cả nước, minh chứng cho chất lượng đào tạo từ Nguyễn Nam BĐS.
+              </p>
+            </motion.div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                { url: "https://i.postimg.cc/qMFHTn2S/469378044-122106461126655133-5840358536912151765-n.jpg", alt: "Khóa học môi giới bất động sản thực chiến Nguyễn Nam" },
+                { url: "https://i.postimg.cc/MKLJSR14/475202150-122114610086655133-5818946478627168752-n.jpg", alt: "Đào tạo kỹ năng chốt deal bất động sản chuyên nghiệp" },
+                { url: "https://i.postimg.cc/15X12MVj/481254248-122119061714655133-2846281682958157149-n.jpg", alt: "Học viên tham gia lớp học marketing bất động sản" },
+                { url: "https://i.postimg.cc/kXHPm8Wy/485944944-122121491234655133-1715954043607850533-n.jpg", alt: "Chia sẻ kinh nghiệm môi giới BĐS từ Nguyễn Nam" },
+                { url: "https://i.postimg.cc/fTyQp5SP/495090103-122127469520655133-2373188469009589832-n.jpg", alt: "Lớp học xây dựng thương hiệu cá nhân cho môi giới" },
+                { url: "https://i.postimg.cc/9FkHhTyp/624510721-122153103584655133-5288745364156712654-n.jpg", alt: "Cộng đồng môi giới bất động sản thực chiến Việt Nam" }
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.1,
+                    ease: [0.21, 0.47, 0.32, 0.98]
+                  }}
+                  className="relative overflow-hidden rounded-2xl aspect-[4/3] border border-slate-800 shadow-2xl bg-slate-900"
+                >
+                  <img 
+                    src={item.url} 
+                    alt={item.alt}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 border-2 border-white/5 rounded-2xl pointer-events-none"></div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Case Studies */}
         <section id="ket-qua" className="py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1130,7 +1184,7 @@ export default function App() {
                         </div>
                         <div className="flex justify-between items-center py-1.5">
                           <span className="text-xs text-slate-500">Nội dung:</span>
-                          <span className="text-green-400 font-bold text-sm bg-green-400/5 px-2 py-0.5 rounded border border-green-400/10">HOC + SĐT + TÊN</span>
+                          <span className="text-green-400 font-bold text-sm bg-green-400/5 px-2 py-0.5 rounded border border-green-400/10">HOC + SĐT + TÊN CỦA BẠN</span>
                         </div>
                       </div>
                     </div>
