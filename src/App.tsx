@@ -303,28 +303,28 @@ const trialVideos = [
   },
   {
     id: 'Ib8j-d9gn9g',
-    title: 'Học viên nói gì về khoá học Content Ads Win',
+    title: 'PHƯƠNG PHÁP HỌC DỰ ÁN CỦA NHÀ MÔI GIỚI BẤT ĐỘNG SẢN CHUYÊN NGHIỆP',
     duration: '02:45',
     isImportant: true,
     tag: 'Free'
   },
   {
     id: 'KWQpfaloovE',
-    title: 'Nội dung học thử Content Ads Win',
+    title: 'Cách "đo" khách hàng "nét" khi Telesale',
     duration: '05:00',
     isImportant: true,
     tag: 'Free'
   },
   {
     id: 'IFx7mkFBKtA',
-    title: 'Nên học qua bộ video E-LEARNING hơn học offline vì 5 lý do sau đây',
+    title: 'Khách hỏi gì là ở nhóm nào? Trả lời theo DISC trong bất động sản',
     duration: '03:31',
     isImportant: false,
     tag: 'Free'
   },
   {
     id: 'rOKpMxx29O8',
-    title: 'Vì sao bạn tư vấn mãi mà khách chưa chốt? Có thể bạn nói sai "nỗi đau" của khách hàng',
+    title: 'Vì sao bạn tư vấn mãi mà khách chưa chốt? Có thể bạn nói sai "ngôn ngữ" DISC',
     duration: '03:30',
     isImportant: true,
     tag: 'Free',
