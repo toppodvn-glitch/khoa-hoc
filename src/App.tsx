@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import YouTube from 'react-youtube';
 import { 
   CheckCircle2, Star, Phone, Mail, MapPin, 
@@ -1325,6 +1326,7 @@ export default function App() {
           </motion.a>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
